@@ -1,0 +1,21 @@
+.img-profile {
+    display: block;
+    margin: auto;
+    margin-top: 2rem;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+  }
+  
+  
+  .username-profile{
+      text-align: center;
+      padding-top: 3rem;
+      font-size: 3rem;
+      font-weight: 100;
+  }
+  
+  .ttpost{
+      text-align: center;
+      font-size: 2rem;
+  }
