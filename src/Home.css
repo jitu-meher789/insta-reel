@@ -439,8 +439,8 @@ video {
   .like-count {
     right: 22px;
   }
-  .video-card {
+  /* .video-card {
     height: 100% !important;
     margin-top: 0px !important;
-  }
+  } */
 }
