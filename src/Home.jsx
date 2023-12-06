@@ -226,17 +226,19 @@ const Home = () => {
             >
               <IconButton
                 color="inherit"
-                onClick={handleDrawerOpen}
+                onClick={handleDrawerOpen}                                                    
                 sx={{
                   mr: 2,
                   ...(open && {
                     display: "none",
                     width: "2rem",
                     height: "2rem",
+                    backgroundColor: "red",
+                    borderRadius:"5px"
                   }),
                 }}
               >
-                <MenuIcon sx={{ fontSize: "2rem" }} />
+                <MenuIcon sx={{ fontSize: "2rem" , backgroundColor:"#4b4545", borderRadius:"4px"}} />
               </IconButton>
 
               <Drawer
@@ -257,8 +259,6 @@ const Home = () => {
                   position: "relative",
                   left: "5rem",
                   top: "0.5rem",
-                  backgroundColor: "#626262",
-                  borderRadius: "5px",
                 }} onClick={handleDrawerClose}>
                   {theme.direction === "ltr" ? (
                     <ChevronLeftIcon />
