@@ -1,15 +1,13 @@
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Redirect, Link } from "react-router-dom";
 import { auth, storage } from "./firebase";
 import { AuthContext } from "./AuthProvider";
 import VideoCard from "./VideoCard";
 import "./Home.css";
-import Navigation from "./Navigation";
 import {
   collection,
   query,
   doc,
-  getDocs,
   addDoc,
   onSnapshot,
   updateDoc,
@@ -18,10 +16,10 @@ import {
 import { db } from "./firebase";
 
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import { updateCurrentUser } from "firebase/auth";
+
 
 import * as React from "react";
-import { styled, useTheme } from "@mui/material/styles";
+import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";

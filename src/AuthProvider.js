@@ -1,7 +1,7 @@
 import React from "react";
 import { createContext, useEffect } from "react";
 import { useState } from "react";
-import { auth, signInWithGoogle, db } from "./firebase";
+import { auth, db } from "./firebase";
 import { doc, getDoc, setDoc } from "firebase/firestore";
 
 

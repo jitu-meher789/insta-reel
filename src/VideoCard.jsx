@@ -12,7 +12,7 @@ const VideoCard = (props) => {
   let [allComments, setAllComments] = useState([]);
   let value = useContext(AuthContext);
   let [like, setLike] = useState("");
-  let [likeCount, setLikeCount] = useState(0);
+  // let [likeCount, setLikeCount] = useState(0);
 
 
   useEffect(() => {
@@ -120,9 +120,9 @@ const VideoCard = (props) => {
       </p>
       <p className="song">
         <span className="material-symbols-outlined">music_note</span>
-        <marquee scrollamount="3" behavior="" direction="">
+        {/* <marquee scrollamount="3" behavior="" direction="">
           this is a very...
-        </marquee>
+        </marquee> */}
       </p>
 
       {boxOpen ? (
