@@ -40,7 +40,7 @@ let Profile = () => {
           </Link>
           <div className="profile-details">
             <div className="profile-pic1">
-              <img src={value.photoURL} alt="profile picture"></img>
+              <img src={value.photoURL} alt="abcd"/>
             </div>
             <div className="profiles-info">
               <div>Posts : {postCount}</div>

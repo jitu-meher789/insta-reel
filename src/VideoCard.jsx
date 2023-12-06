@@ -83,7 +83,7 @@ const VideoCard = (props) => {
 
       <span
         onClick={async () => {
-          if (like == "") {
+          if (like === "") {
             setLike("red");
             await updateDoc(doc(db, "posts", props.post.id), {
               likes: props.post.likes + 1,

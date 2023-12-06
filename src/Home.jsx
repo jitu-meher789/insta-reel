@@ -112,7 +112,7 @@ const Home = () => {
                     size = size / 1000000;
                     type = type.split("/")[0];
 
-                    if (type != "video") {
+                    if (type !== "video") {
                       alert("Please select a video");
                       return;
                     }
@@ -138,13 +138,14 @@ const Home = () => {
                         case "running":
                           console.log("Upload is running");
                           break;
+                        default : console.log("hello");
                       }
-                      if (progress == 100) {
+                      if (progress === 100) {
                         setUploading("");
                       }
                       if (progress < 100) {
                         setStatus("Uploading:");
-                      } else if (progress == 100) {
+                      } else if (progress === 100) {
                         setStatus("Done");
                         setTimeout(function () {
                           setStatus("");
@@ -289,7 +290,7 @@ const Home = () => {
                         size = size / 1000000;
                         type = type.split("/")[0];
 
-                        if (type != "video") {
+                        if (type !== "video") {
                           alert("Please select a video");
                           return;
                         }
@@ -316,13 +317,14 @@ const Home = () => {
                             case "running":
                               console.log("Upload is running");
                               break;
+                            default: console.log("hello2");
                           }
-                          if (progress == 100) {
+                          if (progress === 100) {
                             setUploading("");
                           }
                           if (progress < 100) {
                             setStatus("Uploading:");
-                          } else if (progress == 100) {
+                          } else if (progress === 100) {
                             setStatus("Done");
                             setTimeout(function () {
                               setStatus("");
